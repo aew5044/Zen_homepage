@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zen Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Georgia', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-image: url('https://source.unsplash.com/1600x900/?nature,calm');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    .quote {
+      font-style: italic;
+      margin-bottom: 2em;
+      max-width: 800px;
+    }
+    .links a {
+      display: block;
+      margin: 0.5em;
+      color: #a0c4ff;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+    .message {
+      margin-top: 2em;
+      font-size: 1.1em;
+      color: #bdbdbd;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <h1>Welcome Back</h1>
+  <div class="quote" id="dailyQuote">"The only Zen you find on the tops of mountains is the Zen you bring up there." – Robert M. Pirsig</div>
+  <div class="links">
+    <a href="https://tricycle.org/">Tricycle: The Buddhist Review</a>
+    <a href="https://www.lionsroar.com/">Lion’s Roar</a>
+    <a href="https://zenhabits.net/">Zen Habits</a>
+    <a href="https://www.themarginalian.org/">The Marginalian</a>
+    <a href="https://www.window-swap.com/">WindowSwap</a>
+  </div>
+  <div class="message" id="nudgingMessage">Andrew, breathe. There is nothing urgent.</div>
+
+  <script>
+    const quotes = [
+      "The practice of Zen is forgetting the self in the act of uniting with something." – Koun Yamada,
+      "When you realize nothing is lacking, the whole world belongs to you." – Lao Tzu,
+      "Don't seek the truth. Just drop your opinions." – Zen Master Rujing,
+      "The quieter you become, the more you can hear." – Ram Dass
+    ];
+
+    const messages = [
+      "Andrew, breathe. There is nothing urgent.",
+      "This moment is enough.",
+      "Let go of the scroll. Return to now.",
+      "You are already home."
+    ];
+
+    document.getElementById('dailyQuote').textContent = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById('nudgingMessage').textContent = messages[Math.floor(Math.random() * messages.length)];
+  </script>
+</body>
+</html>
