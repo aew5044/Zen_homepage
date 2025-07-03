@@ -83,23 +83,25 @@
 
   <div class="message" id="nudgingMessage">Andrew, breathe. There is nothing urgent.</div>
 
-  <script>
-    const quotes = [
-      "The practice of Zen is forgetting the self in the act of uniting with something. – Koun Yamada",
-      "When you realize nothing is lacking, the whole world belongs to you. – Lao Tzu",
-      "Don't seek the truth. Just drop your opinions. – Zen Master Rujing",
-      "The quieter you become, the more you can hear. – Ram Dass"
-    ];
+<script>
+  const quotes = [
+    "The practice of Zen is forgetting the self in the act of uniting with something. – Koun Yamada",
+    "When you realize nothing is lacking, the whole world belongs to you. – Lao Tzu",
+    "Don't seek the truth. Just drop your opinions. – Zen Master Rujing",
+    "The quieter you become, the more you can hear. – Ram Dass"
+  ];
 
-    const messages = [
-      "Andrew, breathe. There is nothing urgent.",
-      "This moment is enough.",
-      "Let go of the scroll. Return to now.",
-      "You are already home."
-    ];
+  const messages = [
+    "Andrew, breathe. There is nothing urgent.<br>Everything that matters is already here.",
+    "This moment is enough.<br>You don’t need to become anything else.",
+    "Let go of the scroll. Return to now.<br>The news is not your breath.",
+    "You are already home.<br>Come back to yourself in this breath."
+  ];
 
-    document.getElementById('dailyQuote').textContent = quotes[Math.floor(Math.random() * quotes.length)];
-    document.getElementById('nudgingMessage').textContent = messages[Math.floor(Math.random() * messages.length)];
-  </script>
+  document.getElementById('dailyQuote').textContent =
+    quotes[Math.floor(Math.random() * quotes.length)];
+  document.getElementById('nudgingMessage').innerHTML =
+    messages[Math.floor(Math.random() * messages.length)];
+</script>
 </body>
 </html>
