@@ -37,12 +37,20 @@
       margin-bottom: 2em;
       max-width: 800px;
     }
+    .links {
+      margin-bottom: 1.5em;
+    }
+    .links h2 {
+      margin-top: 1em;
+      font-size: 1.4em;
+      color: #90caf9;
+    }
     .links a {
       display: block;
-      margin: 0.5em;
+      margin: 0.3em;
       color: #a0c4ff;
       text-decoration: none;
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
     .message {
       margin-top: 2em;
@@ -55,21 +63,32 @@
   <div class="overlay"></div>
   <h1>Welcome Back</h1>
   <div class="quote" id="dailyQuote">"The only Zen you find on the tops of mountains is the Zen you bring up there." – Robert M. Pirsig</div>
+
   <div class="links">
+    <h2>🆓 Free & Open Access</h2>
+    <a href="https://zenhabits.net/">Zen Habits</a>
+    <a href="https://www.window-swap.com/">WindowSwap</a>
+    <a href="https://thezenuniverse.org/">The Zen Universe</a>
+    <a href="https://www.reddit.com/r/zen/">Reddit: r/Zen</a>
+    <a href="https://unsplash.com/t/nature">Unsplash – Nature Photos</a>
+    <a href="https://taoistic.com/tao-te-ching/">Tao Te Ching (Free Text)</a>
+    <a href="https://terebess.hu/zen/koans.html">Zen Kōan Archive</a>
+
+    <h2>💠 Quality (May Have Paywalls)</h2>
     <a href="https://tricycle.org/">Tricycle: The Buddhist Review</a>
     <a href="https://www.lionsroar.com/">Lion’s Roar</a>
-    <a href="https://zenhabits.net/">Zen Habits</a>
     <a href="https://www.themarginalian.org/">The Marginalian</a>
-    <a href="https://www.window-swap.com/">WindowSwap</a>
+    <a href="https://joanhalifax.substack.com/">Joan Halifax Substack</a>
   </div>
+
   <div class="message" id="nudgingMessage">Andrew, breathe. There is nothing urgent.</div>
 
   <script>
     const quotes = [
-      "The practice of Zen is forgetting the self in the act of uniting with something." – Koun Yamada,
-      "When you realize nothing is lacking, the whole world belongs to you." – Lao Tzu,
-      "Don't seek the truth. Just drop your opinions." – Zen Master Rujing,
-      "The quieter you become, the more you can hear." – Ram Dass
+      "The practice of Zen is forgetting the self in the act of uniting with something. – Koun Yamada",
+      "When you realize nothing is lacking, the whole world belongs to you. – Lao Tzu",
+      "Don't seek the truth. Just drop your opinions. – Zen Master Rujing",
+      "The quieter you become, the more you can hear. – Ram Dass"
     ];
 
     const messages = [
